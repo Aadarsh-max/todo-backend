@@ -113,7 +113,7 @@ export const upsertUser = async (req, res) => {
         </p>
         
         <div style="text-align: center; margin: 30px 0;">
-          <a href="${process.env.CLIENT_URL}/home" 
+          <a href="https://todolist-skillcoders.vercel.app" 
              style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); 
                     color: #ffffff; 
                     padding: 15px 40px; 
