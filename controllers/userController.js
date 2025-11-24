@@ -19,7 +19,7 @@ export const upsertUser = async (req, res) => {
         photoURL,
       });
       // Welcome Email
-      sendEmail(
+      await sendEmail(
         email,
         "🎉 Welcome to ToDoList – Let's Get Organized!",
         `
@@ -52,7 +52,7 @@ export const upsertUser = async (req, res) => {
         </p>
         
         <div style="text-align: center; margin: 30px 0;">
-          <a href="https://to-do-list-kappa-amber.vercel.app" 
+          <a href="https://todolist-skillcoders.vercel.app" 
              style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                     color: #ffffff; 
                     padding: 15px 40px; 
@@ -80,7 +80,7 @@ export const upsertUser = async (req, res) => {
       return res.status(201).json(user);
     } else {
       // Send Welcome Back
-      sendEmail(
+    await sendEmail(
         email,
         "✅ Welcome Back to ToDoList – Ready to Conquer Today?",
         `
